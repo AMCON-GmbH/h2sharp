@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <!-- Change this to needed h2 Maven Version -->
+        <H2Version>2.1.214</H2Version>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <Nullable>disable</Nullable> <!-- project need to be reworked to activate -->
+
+        <RootNamespace>System.Data.H2</RootNamespace>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Description>ADO.NET for H2 DB</Description>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageProjectUrl>https://github.com/AMCON-GmbH/h2sharp</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/AMCON-GmbH/h2sharp</RepositoryUrl>
+        <AssemblyVersion>$(H2Version)</AssemblyVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="IKVM.Maven.Sdk" Version="1.8"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <MavenReference Include="h2-lib">
+            <GroupId>com.h2database</GroupId>
+            <ArtifactId>h2</ArtifactId>
+            <Version>$(H2Version)</Version>
+        </MavenReference>
+    </ItemGroup>
+</Project>

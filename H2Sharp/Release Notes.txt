@@ -1,2 +1,0 @@
-Release Notes fo H2SharpADO.NET50
-
