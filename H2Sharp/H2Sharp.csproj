@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
         <!-- Change this to needed h2 Maven Version -->
-        <H2Version>2.1.214</H2Version>
+        <H2Version>2.1.210</H2Version>
     </PropertyGroup>
 
     <PropertyGroup>

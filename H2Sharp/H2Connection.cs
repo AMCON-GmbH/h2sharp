@@ -45,8 +45,11 @@ public sealed class H2Connection : DbConnection {
 
     static H2Connection() {
         Driver.load();
-        _ = Server.createWebServer().start();
-        Server.createTcpServer().start();
+
+        // To Start the servers prevents the program from stop.
+        // I don't know why this code exists, but if anyone need it, it stays commented out.
+        //_ = Server.createWebServer().start();
+        //Server.createTcpServer().start();
         //org.h2.tools.Server.openBrowser("http://localhost:8082");
     }
 

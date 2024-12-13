@@ -62,6 +62,7 @@ internal static class H2Helper {
         );
 
         map(Types.BINARY, DbType.Binary, typeof(byte[]), id, id);
+        map(Types.VARBINARY, DbType.Binary, typeof(byte[]), id, id);
 
         map(
             Types.BOOLEAN,
